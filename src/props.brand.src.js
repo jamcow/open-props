@@ -6,6 +6,18 @@ const brandColours = {
         yellowlight: "#e2d66f",
         yellow: "#d9ca45",
     },
+    crimson: {
+      50: "#eec7c7",
+      100: "#dd9393",
+      200: "#cc6666",
+      300: "#bb3e3e",
+      400: "#aa1c1c",
+      500: "#990000",
+      600: "#7a0000",
+      700: "#5b0000",
+      800: "#3d0000",
+      900: "#1e0000"
+    },
 };
 
 const Color = (await import('https://colorjs.io/dist/color.esm.js')).default
