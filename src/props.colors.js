@@ -1,9 +1,10 @@
+/* generated mostly with props.brand.src.js */
 export const Brand = {
-    '--brand-teallight':   '#86b6b6',
-    '--brand-teal':        '#66a3a1',
-    '--brand-red':         '#d84161',
+    '--brand-teallight': '#86b6b6',
+    '--brand-teal': '#66a3a1',
+    '--brand-red': '#d84161',
     '--brand-yellowlight': '#e2d66f',
-    '--brand-yellow':      '#d9ca45',
+    '--brand-yellow': '#d9ca45',
 }
 
 /* generated mostly with props.colors.src.js */
