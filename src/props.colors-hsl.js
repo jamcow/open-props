@@ -1,3 +1,11 @@
+export const Brand = {
+    '--brand-teallight-hsl':   '179 25% 62%',
+    '--brand-teal-hsl':        '178 25% 52%',
+    '--brand-red-hsl':         '347 66% 55%',
+    '--brand-yellowlight-hsl': '54 66% 66%',
+    '--brand-yellow-hsl':      '54 66% 56%',
+}
+
 /* generated mostly with props.colors.src.js */
 export const Gray = {
   '--gray-0-hsl': '210 17% 98%',
@@ -169,6 +177,7 @@ export const Orange = {
 }
 
 const ColorsHSL = {
+  ...Brand,
   ...Gray,
   ...Red,
   ...Pink,

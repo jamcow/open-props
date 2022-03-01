@@ -1,3 +1,11 @@
+export const Brand = {
+    '--brand-teallight':   '#86b6b6',
+    '--brand-teal':        '#66a3a1',
+    '--brand-red':         '#d84161',
+    '--brand-yellowlight': '#d9ca45',
+    '--brand-yellow':      '#e2d66f',
+}
+
 /* generated mostly with props.colors.src.js */
 export const Gray = {
   '--gray-0': '#f8f9fa',
@@ -168,7 +176,7 @@ export const Orange = {
   '--orange-9': '#d9480f',
 }
 
-/* 
+/*
 https://codepen.io/argyleink/pen/VwrKRrY?
 * {
   --gray: #adb5bd;
@@ -203,10 +211,11 @@ https://codepen.io/argyleink/pen/VwrKRrY?
   --color-13: lch(from var(--base) 10% 30 h);
   --color-14: lch(from var(--base) 5% 20 h);
   --color-15: lch(from var(--base) 1% 5 h);
-} 
+}
 */
 
 const Colors = {
+  ...Brand,
   ...Gray,
   ...Red,
   ...Pink,

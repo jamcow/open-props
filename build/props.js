@@ -37,6 +37,7 @@ const mainbundle = {
 }
 
 const individual_colors = {
+  'props.brand.css': OpenColors.Brand,
   'props.gray.css': OpenColors.Gray,
   'props.red.css': OpenColors.Red,
   'props.pink.css': OpenColors.Pink,
@@ -53,6 +54,7 @@ const individual_colors = {
 }
 
 const individual_colors_hsl = {
+  'props.brand-hsl.css': ColorsHSL.Brand,
   'props.gray-hsl.css': ColorsHSL.Gray,
   'props.red-hsl.css': ColorsHSL.Red,
   'props.pink-hsl.css': ColorsHSL.Pink,
