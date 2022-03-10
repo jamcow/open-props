@@ -16,7 +16,7 @@ export const buildPropsStylesheet = ({filename,props}, {selector,prefix}) => {
 
     if (prefix && prefix !== "''")
       prop = `--${prefix}-` + prop.slice(2)
-    
+
     if (prop.includes('animation')) {
       let keyframes = props[`${prop}-@`]
       appendedMeta += keyframes

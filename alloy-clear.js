@@ -23,6 +23,8 @@ const filesToRemoveBase = [
     'props.grape.css',
     'props.gray-hsl.css',
     'props.gray.css',
+    'props.grey-hsl.css',
+    'props.grey.css',
     'props.green-hsl.css',
     'props.green.css',
     'props.indigo-hsl.css',

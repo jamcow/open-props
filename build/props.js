@@ -30,6 +30,7 @@ const mainbundle = {
   'props.shadows.css': Shadows,
   'props.aspects.css': Aspects,
   'props.colors.css': OpenColors.default,
+  'props.colors-hsl.css': ColorsHSL,
   // 'props.svg.css': SVG,
   'props.gradients.css': Gradients,
   'props.animations.css': Animations,
@@ -38,42 +39,42 @@ const mainbundle = {
 
 const individual_colors = {
   'props.brand.css': OpenColors.Brand,
-  'props.gray.css': OpenColors.Gray,
-  'props.red.css': OpenColors.Red,
-  'props.pink.css': OpenColors.Pink,
-  'props.grape.css': OpenColors.Grape,
-  'props.violet.css': OpenColors.Violet,
-  'props.indigo.css': OpenColors.Indigo,
-  'props.blue.css': OpenColors.Blue,
-  'props.cyan.css': OpenColors.Cyan,
-  'props.teal.css': OpenColors.Teal,
+  'props.grey.css': OpenColors.Grey,
   'props.green.css': OpenColors.Green,
-  'props.lime.css': OpenColors.Lime,
-  'props.yellow.css': OpenColors.Yellow,
-  'props.orange.css': OpenColors.Orange,
+  'props.red.css': OpenColors.Red,
+  'props.blue.css': OpenColors.Blue,
+//   'props.pink.css': OpenColors.Pink,
+//   'props.grape.css': OpenColors.Grape,
+//   'props.violet.css': OpenColors.Violet,
+//   'props.indigo.css': OpenColors.Indigo,
+//   'props.cyan.css': OpenColors.Cyan,
+//   'props.teal.css': OpenColors.Teal,
+//   'props.lime.css': OpenColors.Lime,
+//   'props.yellow.css': OpenColors.Yellow,
+//   'props.orange.css': OpenColors.Orange,
 }
 
 const individual_colors_hsl = {
   'props.brand-hsl.css': ColorsHSL.Brand,
-  'props.gray-hsl.css': ColorsHSL.Gray,
-  'props.red-hsl.css': ColorsHSL.Red,
-  'props.pink-hsl.css': ColorsHSL.Pink,
-  'props.grape-hsl.css': ColorsHSL.Grape,
-  'props.violet-hsl.css': ColorsHSL.Violet,
-  'props.indigo-hsl.css': ColorsHSL.Indigo,
-  'props.blue-hsl.css': ColorsHSL.Blue,
-  'props.cyan-hsl.css': ColorsHSL.Cyan,
-  'props.teal-hsl.css': ColorsHSL.Teal,
+  'props.grey-hsl.css': ColorsHSL.Grey,
   'props.green-hsl.css': ColorsHSL.Green,
-  'props.lime-hsl.css': ColorsHSL.Lime,
-  'props.yellow-hsl.css': ColorsHSL.Yellow,
-  'props.orange-hsl.css': ColorsHSL.Orange,
+  'props.red-hsl.css': ColorsHSL.Red,
+  'props.blue-hsl.css': ColorsHSL.Blue,
+//   'props.pink-hsl.css': ColorsHSL.Pink,
+//   'props.grape-hsl.css': ColorsHSL.Grape,
+//   'props.violet-hsl.css': ColorsHSL.Violet,
+//   'props.indigo-hsl.css': ColorsHSL.Indigo,
+//   'props.cyan-hsl.css': ColorsHSL.Cyan,
+//   'props.teal-hsl.css': ColorsHSL.Teal,
+//   'props.lime-hsl.css': ColorsHSL.Lime,
+//   'props.yellow-hsl.css': ColorsHSL.Yellow,
+//   'props.orange-hsl.css': ColorsHSL.Orange,
 }
 
 // gen design tokens
 const jsonbundle = toJSON({
   ...Object.values(individual_colors)
-      .reduce((colors, color) => 
+      .reduce((colors, color) =>
         Object.assign(colors, color), {}),
   ...Sizes,
   ...Easings,
@@ -103,8 +104,8 @@ Object.entries({...mainbundle, ...individual_colors, ...individual_colors_hsl}).
 
 // gen color hsl main file
 buildPropsStylesheet({
-  filename: 'props.colors-hsl.css', 
-  props: ColorsHSL.default}, 
+  filename: 'props.colors-hsl.css',
+  props: ColorsHSL.default},
   {selector, prefix}
 )
 

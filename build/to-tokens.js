@@ -1,10 +1,11 @@
-export const toTokens = props => 
+export const toTokens = props =>
   props.map(([key, token]) => {
     let meta = {}
 
     let isLength = key.includes('size')
     let isEasing = key.includes('ease')
-    let colors = ['gray','red','pink','grape','violet','indigo','blue','cyan','teal','green','lime','yellow','orange']
+    // let colors = ['gray','red','pink','grape','violet','indigo','blue','cyan','teal','green','lime','yellow','orange']
+    let colors = ['grey','green','red','blue']
     let isColor = colors.some(color => key.includes(color))
 
     if      (isLength) meta.type = 'dimension'
